@@ -1,12 +1,12 @@
 print("Kalkulator BMI")
 print()
 
-height = input("Podaj swój wzrost w centymetrach: ")
+height = input("Podaj swój wzrost w metrach: ")
 weight = input("Podaj swoją wagę w kilogramach: ")
 
-bmi = int(weight) / (int(height) / 100) ** 2
+bmi = float(weight) / float(height) ** 2
 
-print("Twoje BMI wynosi: " + str(bmi))
+print("Twoje BMI wynosi: {:.2f}".format(bmi))
 
 if bmi < 18.5:
     print("Masz niedowagę! Zacznij jeść.")
